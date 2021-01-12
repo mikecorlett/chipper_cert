@@ -6,7 +6,7 @@ There are two certificates; one is the certificate that the server (chipper/esca
 
 `mk_ca.sh` generates the CA cert file `ca_cert.pem`. The attributes of the cert are on the openssl command line
 
-The ca_cert file needs to be installed on Vector for him to connect to the cipper service; It can be installed in vic-cloud directly. I added mine to internal/jdocs/escapepod_root_cert.go and modified internal/jdocs/client.go to append the new cert as well as the DDL supplied escape pod cert, e.g. around line 26:
+The ca_cert file needs to be installed on Vector for him to connect to the chipper service; It can be installed in vic-cloud directly. I added mine to internal/jdocs/escapepod_root_cert.go alongside the DDL escapepod root cert and modified internal/jdocs/client.go to append the new cert as well as the DDL supplied escape pod cert, e.g. around line 26:
 
 	func newConn(ctx context.Context, opts *options) (*conn, error) {
 

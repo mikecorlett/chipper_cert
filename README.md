@@ -19,7 +19,7 @@ The ca_cert file needs to be installed on Vector for him to connect to the cippe
 
 **ca_cert and key**
 
-'mk_chipper.sh' generates `chipper_cert.pem` and `chipper_key.pem`. 
+'mk_chipper.sh' generates `chipper_cert.pem` and `chipper_key.pem` in a two step process - generate the certificate signing request (and private key), and generate the signed certificate. 
 
 The chipper cert and key need to be passed to chipper in environment variables as text, e.g.
 
@@ -30,4 +30,5 @@ The chipper cert and key need to be passed to chipper in environment variables a
 	export DDL_RPC_TLS_KEY=$key   
 	./chipper/chipper   
 
+There are other test files still in this repo...
 

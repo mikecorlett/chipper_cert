@@ -14,11 +14,12 @@ The ca_cert file needs to be installed on Vector for him to connect to the cippe
 
 The chipper cert and key need to be passed to chipper, e.g.
 
-`!/bin/bash  
-cert=$(<certs/chipper-cert.pem)  
-key=$(<certs/chipper-key.pem)  
-export DDL_RPC_PORT=8084  
-export DDL_RPC_TLS_CERTIFICATE=$cert  
-export DDL_RPC_TLS_KEY=$key  
-./chipper/chipper  
+`
+#!/bin/bash   
+cert=$(<certs/chipper-cert.pem)   
+key=$(<certs/chipper-key.pem)   
+export DDL_RPC_PORT=8084   
+export DDL_RPC_TLS_CERTIFICATE=$cert   
+export DDL_RPC_TLS_KEY=$key   
+./chipper/chipper   
 `

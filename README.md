@@ -1,6 +1,4 @@
-# chipper_cert
-
-**Create CA cert and server cert / key pair for chipper**
+# Create CA cert and server cert / key pair for chipper
 
 There are two certificates; one is the certificate that the server (chipper/escapepod) offers to the client (vic-cloud on Vector). The second is the root/CA cert which vector uses to validate the certificate offered by the server. 
 
